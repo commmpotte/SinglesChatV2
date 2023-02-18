@@ -1,8 +1,4 @@
-import React, { useState } from 'react'
-import { Button } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
-import Chat from './Chat'
-import LoginMain from './LoginMain'
+import React from 'react'
 import LoginModal from './LoginModal'
 
 function Home() {
@@ -11,7 +7,7 @@ function Home() {
   if (getUsername) {
     return <Chat />
   } else {
-    return <LoginMain />
+    return <LoginModal />
   }
 }
 

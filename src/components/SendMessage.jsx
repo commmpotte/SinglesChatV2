@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import { Dexie } from 'dexie'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-
 const db = new Dexie('chatApp')
 db.version(1).stores({
   chat: `++id, message, author`,
@@ -12,22 +11,21 @@ const { chat } = db
 const getUsername = sessionStorage.getItem('username')
 
 function SendMessage() {
+  useEffect(() => {
+    chat
+      .where('author')
+      .equals(getUsername)
+      .toArray()
+      .then((messages) => {
+        const authorsArray = []
 
-useEffect(() => {
-  chat
-    .where('author')
-    .equals(getUsername)
-    .toArray()
-    .then((messages) => {
-      const authorsArray = []
-
-      messages.forEach((message) => {
-        if (!authorsArray.includes(message.author)) {
-          authorsArray.push(message.author)
-        }
+        messages.forEach((message) => {
+          if (!authorsArray.includes(message.author)) {
+            authorsArray.push(message.author)
+          }
+        })
       })
-    })
-}, [])
+  }, [])
 
   const addMessage = async (event) => {
     event.preventDefault()
