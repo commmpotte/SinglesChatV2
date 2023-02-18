@@ -5,7 +5,7 @@ import { Route, Routes, BrowserRouter as Router } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout'
 import NotFound from './components/NotFound'
 import LoginMain from './components/LoginMain'
-import Chat from './components/Chat'
+import Home from './components/Home'
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<MainLayout />}>
-              <Route index element={<Chat />} />
+              <Route index element={<Home />} />
               <Route path="*" element={<NotFound />} />
               <Route path="login" element={<LoginMain />} />
             </Route>

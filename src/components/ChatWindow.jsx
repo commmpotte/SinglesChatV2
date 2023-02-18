@@ -18,7 +18,7 @@ function ChatWindow() {
       style={{
         overflowY: 'scroll',
         scrollBehavior: 'smooth',
-        height: '500px',
+        height: '475px',
       }}
     >
       <div className="list-unstyled mb-4">

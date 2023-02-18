@@ -14,7 +14,7 @@ const NotFound = () => {
               Sorry, an error has occured! Requested page not found!
             </div>
             <div class="error-actions mt-3">
-              <Button className="btn btn-primary me-3">
+              <Button className="btn btn-info me-3">
                 <Link to="/" className="nav-link px-2 text-white">
                   Not Yankee, but bring me to HOME plz!
                 </Link>
