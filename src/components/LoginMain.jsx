@@ -21,7 +21,7 @@ function LoginMain() {
    <div className="d-flex align-items-center" style={{ height: '100vh' }}>
      <div className="w-100 m-auto">
        <div className=" text-center">
-         <h3 className="display-5 fw-bold ">Welcome to Singles Chat</h3>
+         <h3 className="display-5 fw-bold ">Welcome to Singles Chat!</h3>
          <h4 className="display-6 m-3">*put your username here*</h4>
        </div>
        <main className="form-signin">

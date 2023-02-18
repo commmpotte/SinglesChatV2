@@ -9,17 +9,17 @@ import Home from './components/Home'
 
 function App() {
   return (
-      <div className="App">
-        <Router>
-          <Routes>
-            <Route path="/" element={<MainLayout />}>
-              <Route index element={<Home />} />
-              <Route path="*" element={<NotFound />} />
-              <Route path="login" element={<LoginMain />} />
-            </Route>
-          </Routes>
-        </Router>
-      </div>
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path="login" element={<LoginMain />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
