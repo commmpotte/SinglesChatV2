@@ -2,11 +2,9 @@ import React, { useState } from 'react'
 import { Button } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 
-
 function LoginModal() {
   const [username, setUsername] = useState('')
   const navigate = useNavigate()
-  const getUsername = sessionStorage.getItem('username')
 
   const handleNameChange = (event) => {
     setUsername(event.target.value)
@@ -33,8 +31,8 @@ function LoginModal() {
             <h1 className="fw-bold mb-0 fs-2">Welcome to Singles Chat!</h1>
           </div>
 
-          <div className="modal-body p-3 ps-md-5 pe-md-5 pt-0" >
-            <form >
+          <div className="modal-body p-3 ps-md-5 pe-md-5 pt-0">
+            <form>
               <div className="form-floating mb-3">
                 <input
                   onChange={handleNameChange}
@@ -50,7 +48,6 @@ function LoginModal() {
                 className="w-100 btn btn-lg btn-info mt-2"
                 onClick={handleSubmit}
                 type="submit"
-                
               >
                 GO
               </Button>

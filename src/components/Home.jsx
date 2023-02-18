@@ -1,4 +1,5 @@
 import React from 'react'
+import Chat from './Chat'
 import LoginModal from './LoginModal'
 
 function Home() {
