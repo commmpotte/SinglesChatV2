@@ -11,7 +11,7 @@ function Home() {
   if (getUsername) {
     return <Chat />
   } else {
-    return <LoginModal />
+    return <LoginMain />
   }
 }
 
