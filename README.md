@@ -1,3 +1,18 @@
+## Intro
+In this repo, you can find the second version of chat for single people! In this case, I set up a logic where the user can put his name in a form and get access to the chat. 
+Here is no server part, instead of it I used IndexedDB (via Dexie). Chat history is global for a whole browser. And I set up an easy-looking & simple Bootstrap layout.
+
+Version num.1 is here
+https://github.com/commmpotte/SinglesChat
+
+And a couple of screenshots of this application for sure
+
+
+<img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 23" src="https://user-images.githubusercontent.com/95095531/219901789-99f50f7a-d050-4430-b6d3-53eabe3d5fce.png">
+
+<img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 49" src="https://user-images.githubusercontent.com/95095531/219901791-2cd79be1-c30b-44f8-ab51-886bdc5d7e6c.png">
+
+
 # React Project for the React Course
 
 ## Available Scripts
