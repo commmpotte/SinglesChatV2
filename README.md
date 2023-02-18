@@ -6,7 +6,10 @@ Version num.1 is here
 https://github.com/commmpotte/SinglesChat
 
 And a couple of screenshots of this application for sure
+
+
 <img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 23" src="https://user-images.githubusercontent.com/95095531/219901789-99f50f7a-d050-4430-b6d3-53eabe3d5fce.png">
+
 <img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 49" src="https://user-images.githubusercontent.com/95095531/219901791-2cd79be1-c30b-44f8-ab51-886bdc5d7e6c.png">
 
 
