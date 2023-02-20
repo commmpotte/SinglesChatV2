@@ -8,7 +8,8 @@ https://github.com/commmpotte/SinglesChat
 
 And a couple of screenshots for sure. 
 
-<img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 23" src="https://user-images.githubusercontent.com/95095531/219937197-0668831a-5dcc-4af8-906d-bf4e36b5ecd4.png">
+<img width="1280" alt="Снимок экрана 2023-02-20 в 20 37 31" src="https://user-images.githubusercontent.com/95095531/220171314-288f3533-5f66-44a8-8eba-28a7e636d90e.png">
+
 
 <img width="1280" alt="Снимок экрана 2023-02-19 в 01 18 49" src="https://user-images.githubusercontent.com/95095531/219937199-103e087c-8d3d-4bfd-93f0-3628b6a7e615.png">
 
