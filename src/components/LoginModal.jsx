@@ -1,23 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Button } from 'react-bootstrap'
-import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 function LoginModal() {
-  const [username, setUsername] = useState('')
-  const navigate = useNavigate()
-
-  const handleNameChange = (event) => {
-    setUsername(event.target.value)
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    sessionStorage.setItem('username', username)
-    sessionStorage.setItem('myTab', 'true')
-    navigate('/')
-    window.location.reload()
-  }
-
   return (
     <div
       className="modal modal-signin position-static d-block py-5"
@@ -25,33 +10,25 @@ function LoginModal() {
       role="dialog"
       id="modalSignin"
     >
-      <div className="modal-dialog" role="document">
-        <div className="modal-content rounded-4 shadow">
-          <div className="modal-header p-3 ps-md-5 pe-md-5pb-4 border-bottom-0">
-            <h1 className="fw-bold mb-0 fs-2">Welcome to Singles Chat!</h1>
+      <div className="modal-dialog text-center" role="document">
+        <div className="modal-content rounded-4 shadow ">
+          <div className="modal-header p-3 ps-lg-5 pe-lg-5 pb-1 text-center">
+            <h1 className="fw-bold m-auto fs-2">Welcome to Singles Chat!</h1>
+          </div>
+          <div className="modal-body">
+            <h2>*to continue you need to login*</h2>
           </div>
 
-          <div className="modal-body p-3 ps-md-5 pe-md-5 pt-0">
-            <form>
-              <div className="form-floating mb-3">
-                <input
-                  onChange={handleNameChange}
-                  value={username}
-                  className="form-control rounded-3"
-                  type="text"
-                  placeholder="UserName"
-                />
-
-                <label>UserName</label>
-              </div>
-              <Button
-                className="w-100 btn btn-lg btn-info mt-2"
-                onClick={handleSubmit}
-                type="submit"
+          <div className="modal-body p-3 ps-md-5 pe-md-5 pt-0 ">
+            <Button className="w-100 btn btn-lg btn-info mt-2" type="button">
+              <Link
+                className="text-decoration-none"
+                style={{ color: 'white' }}
+                to="/login"
               >
-                GO
-              </Button>
-            </form>
+                GO TO LOGIN PAGE
+              </Link>
+            </Button>
           </div>
         </div>
       </div>
